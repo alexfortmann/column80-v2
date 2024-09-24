@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
     vector<string> files;
 
     if (argc < 2 || argc > 5) {
-        cout << "Usage: ./80cols [Options] <input_filename> [output_filename]"
+        cout << "Usage: column80 [Options] <input_filename> [output_filename]"
              << endl;
         return 1;
     }
@@ -74,7 +74,7 @@ int main(int argc, char *argv[]) {
 
         // If -h is specified, print the help message.
         } else if (arg == "-h" || arg == "--help") {
-            cout << "Usage: ./80cols [Options] <input_filename> "
+            cout << "Usage: column80 [Options] <input_filename> "
                          "[output_filename]\n"
                  << "\n"
                  << "Options:\n"
@@ -95,7 +95,7 @@ int main(int argc, char *argv[]) {
         // If more than two files or unrecognized argument, error.
         } else {
             cerr << "Error: Invalid arguments.\n"
-                    "Usage: ./80cols [-w width] <input_filename> "
+                    "Usage: column80 [-w width] <input_filename> "
                     "[output_filename]"
                  << endl;
                  return 1;
